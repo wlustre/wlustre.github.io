@@ -1,12 +1,3 @@
-// $(document).ready(function () {
-//     $("#myBtn").click(function () {
-//         $("#myModal").css({"display":"block"})
-//     })
-//     $(".close").click(function(){
-//         $("#myModal").css({"display":"none"})
-//     })
-// })
-
 (function($){                                       /*延迟*/
     $.fn.hoverDelay = function(options){
         var defaults = {
@@ -32,27 +23,8 @@
         });
     }
 })(jQuery);
-$(document).ready(function(){           /*淡入淡出*/
-    $(".dropdown").hoverDelay({
-        hoverEvent:function() {
-            $(".dropdown-conten").fadeIn();
-    },
-        outEvent: function(){
-            $(".dropdown-conten").fadeOut();
-        }
-    });
-});
-$(document).ready(function(){           /*淡入淡出*/
-    $(".dropdown2").hoverDelay({
-        hoverEvent:function() {
-            $(".dropdown-conten2").fadeIn();
-        },
-        outEvent: function(){
-            $(".dropdown-conten2").fadeOut();
-        }
-    });
-});
-$(document).ready(function(){           /*淡入淡出*/
+
+$(document).ready(function(){           /*淡入淡出游戏卡*/
     $(".shop-content1").hoverDelay({
         hoverEvent:function() {
             $(".detailed").fadeIn();
@@ -64,6 +36,17 @@ $(document).ready(function(){           /*淡入淡出*/
         }
     });
 });
+$(document).ready(function(){           /*淡入淡出头像*/
+    $(".dropdown").hoverDelay({
+        hoverEvent:function() {
+            $(".dropdown-conten").fadeIn();
+        },
+        outEvent: function(){
+            $(".dropdown-conten").fadeOut();
+        }
+    });
+});
+
 
 
 $(function() {
@@ -76,23 +59,6 @@ $(function() {
         directionNav:"true"
     });
 });
-
-function opentab(evt,tabname){
-        var i,tabcontent,tablinks;
-        tabcontent=document.getElementsByClassName("tabcontent");
-        for(i=0;i<tabcontent.length;i++){
-            tabcontent[i].style.display="none"
-        }
-        tablinks=document.getElementsByClassName("tablinks");
-        for(i=0;i<tablinks.length;i++){
-            tablinks[i].className=tablinks[i].className.replace(" active","");
-        }
-        document.getElementById(tabname).style.display="block";
-        evt.currentTarget.className+=" active";
-    }
-window.onload=function(){
-    document.getElementById("defaultOpen").click();
-}
 
 
 // 置顶
@@ -112,10 +78,4 @@ window.onscroll=function() {
     else if(scroll<600){
         topv.style.display="none";
     }
-}
-function addcar(){
-    var num=0
-    num++
-    document.getElementById(shop-car)
-
 }

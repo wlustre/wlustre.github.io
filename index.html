@@ -1,354 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no">
-    <title>CHAR游戏网站</title>
+    <title>创e网络联盟-测试</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
     <script src="js/jquery-3.2.1.js"></script>
-    <script  language="javascript" src="js/index.js" ></script>
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-    <style>
-        @media screen and (max-width: 1200px ){
-            /*.rights{*/
-            /*display: none;*/
-            /*}*/
-            .lefts{
-                display: none;
-            }
-            .mains{
-                width: 70%;
-            }
-            .container{
-                width: 90%
-            }
-            .menu-3{
-                display: none;
-            }
-            .flexslider{
-                left:-150px;
-            }
-            .center-menu{
-                width: 62.5%;
-            }
-            .bottom4{
-                display: none;
-            }
-            .bottom3{
-                margin-right:0;
-            }
-
-        }
-        @media screen and (max-width: 1000px ){
-            .gotop{
-                display: none;
-            }
-            .rights{
-            display: none;
-            }
-            .lefts{
-                display: none;
-            }
-            .mains{
-                width: 100%;
-            }
-            .container{
-                width: 90%
-            }
-            .menu-3{
-                display: none;
-            }
-            .flexslider{
-                width:90%;
-                left:0;
-                margin:0 5%;
-            }
-            .center-menu{
-                height: auto;
-                width: 100%;
-            }
-            .bottom4{
-                display: none;
-            }
-            .menu-2{
-                display: none;
-            }
-        }
-    </style>
+    <script  language="javascript" src="js/index.js" ></script>
 
 </head>
 <body>
-<div class="menu">
-    <div class="head-banner">
-        <!--<img src="图/城镇.jpg" style="height:218px;" align="center">-->
-    </div>
-    <div class="search">
-        <form>
-            <input type="text" placeholder="想找游戏？来这里" value="" class="search-keyword">
-            <button type="submit" class="search-submit"></button>
-        </form>
-    </div>
-    <div class="head-menu">
-        <div class="menu-1">
-            <ul>
-                <li class="menu-li tu"  ><img src="images/logo.png"style="height:41px;" ></li>
-                <li class="menu-li"><a href="index.html">主页</a> </li>
-                <li class="menu-li"><a href="视频大赛 _ 决赛名单.html">活动</a></li>
-                <li class="menu-li"><a href="store.html">商城</a></li>
-                <li class="menu-li"><a href="picture.html">画册</a></li>
+    <div class="header clearfix">
+        <div class="logo">
+            <h2>CENET</h2>
+        </div>
+        <div class="navigation ">
+            <ul class="clearfix">
+                <li ><a href="#">首页</a></li>
+                <li><a href="#">文章</a></li>
+                <li><a href="#">活动</a></li>
+                <li><a href="#">相册</a></li>
+
             </ul>
         </div>
-        <div class="menu-2">
-            <ul>
+        <div class="navigation-2">
+            <ul class="clearfix ">
                 <li class="dropdown"><a href="#"><img id="touxiang" class="imgdro" src="images/头像.jpg"></a>
                     <div class="dropdown-conten">
-                    <form id="dafter" style="display: block">
-                        <p>迷糊糊一拳</p>
-                        <div class="info">
-                            <P>超级会员用户</P>
-                            <p>我的购物车<span id="shop-car"></span></p>
-                            <p>消费积分</p>
-                            <p>成就</p>
-                            <p>我的游戏</p>
-                            <p>安全中心</p>
-                            <div id="exit">
-                                <p>退出</p>
-                            </div>
-                        </div>
 
-                    </form>
-
-                <form style="display: none" id="dbefore">
-
-                    <a class="button" href="login.html" style="color: #ffffff;">登陆</a>
-                    <div class="bottom">
-                        <a href=""  class="link">加入我们！注册新账号</a>
                     </div>
-                </form>
-                </div>
-            </li>
-                <li class="menu-li dropdown2"><a href="#">消息</a>
-                <div class="dropdown-conten2">
-                    <form>
-                        <p>暂时没有您的消息</p>
-                    </form>
-                </div>
                 </li>
-                <li class="menu-li"><a href="#">收藏</a></li>
-                <li class="menu-li"><a href="#">关注</a></li>
-                <li class="menu-li"><a href="#">个人</a></li>
             </ul>
         </div>
-
-        <div class="nav-mask"></div>
     </div>
-</div>
 
-
-
-
-    <div class="center-menu">
-        <div class="menu-3">
-            <ul>
-                <li class="object1"><a href="#">角色扮演RPG</a>
-                    <div class="ob1">
-                        <p>热门推荐</p>
-                        <div class="game1">
-                            <img src="images/game/巫师3.jpg">
-                            <p>巫师3：年度版</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/上古卷轴.jpg">
-                            <p>上古卷轴：天际</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/火炬之光.jpg">
-                            <p>火炬之光</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/中土世界.jpg">
-                            <p>中土世界：暗影魔多</p>
-                        </div>
-                        <div class="more">
-                            <p>更多</p>
-                        </div>
-                    </div></li>
-
-                <li class="object2"><a href="#">动作游戏ACT</a>
-                    <div class="ob2">
-                        <p>热门推荐</p>
-                        <div class="game1">
-                            <img src="images/game/gta5.jpg">
-                            <p>侠盗猎车5</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/看门狗2.jpg">
-                            <p>看门狗2</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/绝地求生大逃杀.jpg">
-                            <p>绝地求生大逃杀</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/古墓丽影：崛起.jpg">
-                            <p>古墓丽影：崛起</p>
-                        </div>
-                        <div class="more">
-                            <p>更多</p>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="object3"><a href="#">体育竞技SPG</a>
-                    <div class="ob3">
-                        <p>热门推荐</p>
-                        <div class="game1">
-                            <img src="images/game/巫师3.jpg">
-                            <p>巫师3：年度版</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/上古卷轴.jpg">
-                            <p>上古卷轴：天际</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/火炬之光.jpg">
-                            <p>火炬之光</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/中土世界.jpg">
-                            <p>中土世界：暗影魔多</p>
-                        </div>
-                        <div class="more">
-                            <p>更多</p>
-                        </div>
-                    </div></li>
-
-                <li class="object4"><a href="#">策略战棋SLG</a>
-                    <div class="ob4">
-                        <p>热门推荐</p>
-                        <div class="game1">
-                            <img src="images/game/巫师3.jpg">
-                            <p>巫师3：年度版</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/上古卷轴.jpg">
-                            <p>上古卷轴：天际</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/火炬之光.jpg">
-                            <p>火炬之光</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/中土世界.jpg">
-                            <p>中土世界：暗影魔多</p>
-                        </div>
-                        <div class="more">
-                            <p>更多</p>
-                        </div>
-                    </div></li>
-
-                <li class="object5"><a href="#">即时战略RTS</a>
-                    <div class="ob5">
-                        <p>热门推荐</p>
-                        <div class="game1">
-                            <img src="images/game/巫师3.jpg">
-                            <p>巫师3：年度版</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/上古卷轴.jpg">
-                            <p>上古卷轴：天际</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/火炬之光.jpg">
-                            <p>火炬之光</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/中土世界.jpg">
-                            <p>中土世界：暗影魔多</p>
-                        </div>
-                        <div class="more">
-                            <p>更多</p>
-                        </div>
-                    </div></li>
-
-                <li class="object6"><a href="#">冒险解谜AVG</a>
-                    <div class="ob6">
-                        <p>热门推荐</p>
-                        <div class="game1">
-                            <img src="images/game/巫师3.jpg">
-                            <p>巫师3：年度版</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/上古卷轴.jpg">
-                            <p>上古卷轴：天际</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/火炬之光.jpg">
-                            <p>火炬之光</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/中土世界.jpg">
-                            <p>中土世界：暗影魔多</p>
-                        </div>
-                        <div class="more">
-                            <p>更多</p>
-                        </div>
-                    </div></li>
-
-                <li class="object7"><a href="#">休闲益智PUZ</a>
-                    <div class="ob7">
-                        <p>热门推荐</p>
-                        <div class="game1">
-                            <img src="images/game/巫师3.jpg">
-                            <p>巫师3：年度版</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/上古卷轴.jpg">
-                            <p>上古卷轴：天际</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/火炬之光.jpg">
-                            <p>火炬之光</p>
-                        </div>
-                        <div class="game1">
-                            <img src="images/game/中土世界.jpg">
-                            <p>中土世界：暗影魔多</p>
-                        </div>
-                        <a href="store.html" style="height: 20px;width: 44px;display: block"> <div class="more">
-                            更多
-                        </div></a>
-                    </div></li>
-            </ul>
-        </div>
+    <div class="content-one clearfix">
         <div class="flexslider"> <!--轮播-->
+            <h2>精彩推荐</h2>
             <ul class="slides" >
-                <li><a href="show.html"><div>
-                    <img src="images/l1.jpg"  >
+                <li><a href="#"><div>
+                    <img src="images/slider1.jpg"  >
                     <div class="sbottom">
                     </div>
                     <div class="stext">
-                    <p>&nbsp;&nbsp;&nbsp;绝地求生限量打折！每份只需88！另外有更多加速器优惠！</p>
+                        <p>&nbsp;&nbsp;&nbsp;绝地求生限量打折！每份只需88！另外有更多加速器优惠！</p>
                     </div>
-                    </div></a></li>
-                <li><a href="show.html"><div>
-                    <img src="images/l2.jpg"  >
+                </div></a></li>
+                <li><a href="#"><div>
+                    <img src="images/slider2.jpg"  >
                     <div class="sbottom">
                     </div>
                     <div class="stext">
                         <p>&nbsp;&nbsp;&nbsp;《看门狗2》“决斗”模式演示公开 三大全新PVP玩法</p>
                     </div>
                 </div></a></li>
-                <li><a href="show.html"><div>
-                    <img src="images/l3.jpg"  >
+                <li><a href="#"><div>
+                    <img src="images/slider1.jpg"  >
                     <div class="sbottom">
                     </div>
                     <div class="stext">
                         <p>&nbsp;&nbsp;&nbsp;《刺客：起源》对比初代《刺客信条》：十年画质飞跃</p>
                     </div>
                 </div></a></li>
-                <li><a href="show.html"><div>
-                    <img src="images/l4.jpg"  >
+                <li><a href="#"><div>
+                    <img src="images/slider2.jpg"  >
                     <div class="sbottom">
                     </div>
                     <div class="stext">
@@ -356,48 +72,80 @@
                     </div>
                 </div></a></li>
             </ul>
+        </div><!--
+     --><div class="new-writing">
+        <h2 style="font-size: 17px">我们e家</h2>
+            <a href="#"><div class="writingbox">
+                    <img src="images/writing-1.jpg">
+                    <div class="xianxi">
+                        <h2>创e网络联盟</h2>
+                        <p>嘉大优秀学生社团，自2009年6月11日成立之日起的这8年来，主打各种多媒体软件一直致力于提高社员的电脑技能和创新能力。</p>
+                        <h3 class="nav-j">❯</h3>
+                    </div>
+            </div></a>
+            <a href="#"><div class="writingbox">
+                    <img src="images/writing-2.jpg">
+                    <div class="xianxi">
+                    <h2>八大部门</h2>
+                    <p>秘书处&nbsp;&nbsp;|&nbsp;&nbsp;财务部&nbsp;&nbsp;|&nbsp;&nbsp;宣传部&nbsp;&nbsp;|&nbsp;&nbsp;联络部</p>
+                    <p>组织部&nbsp;&nbsp;|&nbsp;&nbsp;设计部&nbsp;&nbsp;|&nbsp;&nbsp;网络部&nbsp;&nbsp;|&nbsp;&nbsp;软件部</p>
+                    <p>&nbsp</p>
+                    <h3 class="nav-j">❯</h3>
+                </div>
+            </div></a>
+            <a href="#"><div class="writingbox">
+                    <img src="images/writing-3.jpg">
+                    <div class="xianxi">
+                    <h2>活动</h2>
+                    <p>品牌活动:Myhow原创视频大赛</p>
+                    <p>创意月:创意小组活动</p>
+                    <p>会员开课:ps 会声会影 pr</p>
+                    <h3 class="nav-j">❯</h3>
+                    </div>
+            </div></a>
         </div>
-
     </div>
 
-    <div class="container">
-        <div class="lefts">
-            <div>
-                <ul>
-                    <li><a href="#"><img src="images/uiii-ae-icon.png" style="width: 45px; float: left">
-                        <h3>After Effects</h3>
-                        <h4>新手入门</h4>
-                        <p>视频必备神器</p></a></li>
-                    <li><a href="#"><img src="images/uiii-ps-icon.png" style="width: 45px;float: left">
-                    <h3>Photoshop</h3>
-                    <h4>新手入门</h4>
-                    <p>设计师必备神奇</p></a></li>
-                    <li><a href="#"><img src="images/uiii-ai-icon.png" style="width: 45px;float: left">
-                        <h3></h3>
-                        <h4>新手入门</h4>
-                        <p>设计师必备神奇</p></a></li>
-                </ul>
+    <div class="container clearfix">
+        <div class="lefts clearfix">
+            <div class="lefts-border clearfix">
+                <div class="lefts-box1">
+                    <img src="images/ps.jpg">
+                    <div class="lefts-box-title">
+                        <h3>ps软件下载及安装</h3>
+                        <p>就是这么6</p>
+                    </div>
+                </div>
+                <div class="lefts-box2">
+                    <img src="images/ae.png">
+                    <div class="lefts-box-title">
+                        <h3>ps软件下载及安装</h3>
+                        <p>就是这么6</p>
+                    </div>
+                </div>
+                <div class="lefts-box3">
+                    <img src="images/pr.png">
+                    <div class="lefts-box-title">
+                        <h3>ps软件下载及安装</h3>
+                        <p>就是这么6</p>
+                    </div>
+                </div>
             </div>
 
         </div>
         <div class="mains">
-            <div class="tab">
-                <button class="tablinks" onclick="opentab(event, 'hot')" id="defaultOpen">热点新闻</button>
-                <button class="tablinks" onclick="opentab(event, 'course')">最新攻略</button>
-                <button class="tablinks" onclick="opentab(event, 'shop')">正版游戏</button>
-            </div>
 
             <div id="hot" class="tabcontent">
                 <div class="contents">
                     <h2 class="f-title">
-                        <span>精选文章</span>
+                        <span>LATEST ARTICLES</span>
                     </h2>
                     <div>
                         <div class="entry-header">
-                            <h2 class="entry-title"><a href="#">TGA2017：《塞尔达传说：荒野之息》问鼎2017年度游戏</a></h2>
+                            <h2 class="entry-title"><a href="#">第八届My Ssow原创视频大赛来袭了！</a></h2>
                         </div>
                         <div class="post-title">
-                            2017-11-18 &nbsp;|&nbsp; 推荐
+                            2017-03-30&nbsp;|&nbsp;嘉应学院创E网络联盟
                         </div>
                         <div>
                             <a href="#">
@@ -405,7 +153,15 @@
                             </a>
                         </div>
                         <div class="word">
-                            <p>导读:有着“游戏界奥斯卡”之称的TGA颁奖典礼今日正式举行，最终获得年度游戏的是《塞尔达传说：荒野之息》！</p>
+                            <p>导读:我们正在经历的这个时代，
+
+                                也许“历史"变成了一样更轻盈的东西，
+
+                                此刻你的年轻新鲜，
+
+                                也许用不了三五年，
+
+                                就会成为别人眼中的”旧时代</p>
                         </div>
                     </div>
                     <div>
@@ -442,240 +198,55 @@
                     </div>
                 </div>
             </div>
-
-            <div id="course" class="tabcontent">
-                <div class="courses">
-                    <div class="tutitle">
-                        <img src="images/攻略1.jpg">
-                    </div>
-                    <div class="jieshao">
-                        <p>　1944年的诺曼底，一场规模浩大的登陆战正式打响，玩家就扮演了参与战役的一名美军普通士兵。而随后，镜
-                            头一转我们来到了内陆场景，德军斯图卡战机在空中向盟军扫射，主角小队一行人不断深入战区，战斗也越来
-                            越激烈，戏剧性的冲突也逐渐增多。在《使命召唤14：二战》当中，玩家需要去找医疗兵救治，弹药也是同样
-                            的道理。</p>
-                    </div>
-                    <ul>
-                        <li><p>《使命召唤14》全剧情全收集图文攻略</p></li>
-                        <li><p>《使命召唤14》纪念品全收集图文攻略</p></li>
-                        <li><p>《使命召唤14》强档攻略</p></li>
-                        <li><p>《使命召唤14》单人战役全剧情攻略</p></li>
-                    </ul>
-                </div>
-                <div class="courses">
-                    <div class="tutitle">
-                        <img src="images/攻略2.jpg">
-                    </div>
-                    <div class="jieshao">
-                        <p>　《刀剑神域：虚空幻界》中文版是由NBGI发行的动作角色扮演游戏，本作是《刀剑神域》系列的续作，《刀剑
-                            神域：虚空幻界》将着重在动作性以及RPG要素，对玩家来说会是一款更接近MMORPG游戏的规模。</p>
-                    </div>
-                    <ul>
-                        <li><p>《刀剑虚空幻界》全神器及邪神位置一览</p></li>
-                        <li><p>《刀剑虚空幻界》pc版全流程视频攻略合辑</p></li>
-                        <li><p>《刀剑虚空幻界》传说武器属性和外观一览</p></li>
-                        <li><p>《刀剑虚空幻界》火山攻略详解 火山怎么过？</p></li>
-                    </ul>
-                </div>
-                <div class="courses">
-                    <div class="tutitle">
-                        <img src="images/攻略3.jpg">
-                    </div>
-                    <div class="jieshao">
-                        <p>　《和Bennett Foddy 一起攻克难关》是一个惩罚性的攀岩游戏，对Jazzuo的2002推出的B类游戏经典《迷人远
-                            足》表示敬意。你用鼠标移动锤子可可以了。通过练习，你可以跳跃，摇摆，爬升和飞跃。伟大的奥秘和美秒的
-                            回报等待着登顶的远足者。</p>
-                    </div>
-                    <ul>
-                        <li><p>《掘地求生》全地图关卡难点图示详解</p></li>
-                        <li><p>《getting over it》怎么操作？玩法简单介绍</p></li>
-                        <li><p>《getting over it》配置高吗？配置要求详解</p></li>
-                        <li><p>《掘地求升》游戏简单介绍 游戏怎么样？</p></li>
-                    </ul>
-                </div>
-                <div class="courses">
-                    <div class="tutitle">
-                        <img src="images/攻略4.jpg">
-                    </div>
-                    <div class="jieshao">
-                        <p>　全新的格斗游戏《不义联盟2》将带来DC宇宙中大量的超级英雄与超级反派阵容，并让玩家可以对自
-                            己喜爱的角色进行定制，打造独一无二的终极DC角色。</p>
-                    </div>
-                    <ul>
-                        <li><p>《不义联盟2》超女试玩演示视频</p></li>
-                        <li><p>《不义联盟2》部分角色图览及视频介绍</p></li>
-                        <li><p>《不义联盟2》主要角色连招视频演示</p></li>
-                        <li><p>《不义联盟2》白金奖杯达成攻略</p></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="shop" class="tabcontent">
-                <a href="store.html" style="display: block;width: 80px;height: 42px" ><div class="lookmore"></div></a>
-                <div class="shop-content1">
-                    <div class="content-img">
-                        <img src="images/游戏商城1.jpg">
-                    </div>
-                    <div class="content-title">
-                        <h2>绝地求生大逃杀</h2>
-
-                    <div class="content-js">
-                        开发商：PUBG Corporation
-                    </div>
-                    <div class="content-price">
-                        <div class="discount">
-                            -11%
-                        </div>
-                        <div class="discounts">
-                            <div class="discount1">￥99</div>
-                            <div class="discount2">￥88</div>
-                        </div>
-                        <div class="shopcar">
-                            <button onclick="addcar()">添加到购物车</button>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="triangle">
-
-                    </div>
-                    <div class="detailed">
-                        <div class="detailed-title">
-                            <h2>绝地求生大逃杀</h2>
-                            <p>发行于：2017年3月23日</p>
-                        </div>
-                        <div class="detailed-img">
-                            <img src="images/详情1.jpg">
-                        </div>
-                        <div class="detalied-js">
-                            绝地求生是大逃杀类型的游戏，每一局游戏将有100名玩家参与，
-                            他们将被投放在绝地岛的上空，游戏开始跳伞时所有人都一无所有。
-                        </div>
-                        <div class="detailed-ct">
-                            用户标签：
-                            <div>
-                                <ul>
-                                    <li>开放世界</li>
-                                    <li>第三人称射击</li>
-                                    <li>多人</li>
-                                    <li>大逃杀</li>
-                                    <li>合作</li>
-                                    <li>动作</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="shop-content2">
-                    <div class="content-img">
-                        <img src="images/游戏商城2.jpg">
-                    </div>
-                    <div class="content-title">
-                        <h2>仁王 Complete Edition</h2>
-
-                        <div class="content-js">
-                            开发商：KOEI TECMO GAMES CO., LTD.
-                        </div>
-                        <div class="content-price">
-                            <div class="discount">
-                                -20%
-                            </div>
-                            <div class="discounts">
-                                <div class="discount1">￥249</div>
-                                <div class="discount2">￥199</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
         </div>
         <div class="rights">
-            <div class="right-f">
-                <span>每日一游</span>
-            </div>
-            <div class="right-box">
-                <div class="right-img">
-                    <a href="#"><img src="images/right-1.jpg"></a>
-                </div>
-
-                <div class="right-word">
-                    <p class="c1">纪念碑谷2</p>
-                    <p class="c2">益智-解密</p>
-                    <p class="right-word-bottom">
-                        <span class="span1">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10239
-                        </span>
-                        <span class="span2">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2842
-                        </span>
-                        <span class="span3">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;236
-                        </span>
-                    </p>
-
-                </div>
-                <div class="right-word2">
-                    <span class="span4"><a href="#">迷糊糊一拳</a></span>
-                    <span class="span5">刚刚</span>
-
-                </div>
+            <div>
+                <h3>公告</h3>
+                <p>新网站上线啦</p>
             </div>
 
-            <div class="tuiguang">
-                <img src="images/gg.jpg">
-            </div>
+
+
         </div>
     </div>
     <div class="gotop" id="top1">
         <a onclick="pageScroll()"><img src="images/返回顶部.png"></a>
-</div>
+    </div>
     <div class="under">
         <div class="centerbox">
-        <div class="bottom1">
-            <h4>友情链接</h4>
-            <p><a href="https://www.bilibili.com/">bilibili</a></p>
-            <p><a href="http://www.runoob.com/">runoob</a></p>
-            <p><a href="http://www.58pic.com/">千图网</a></p>
-        </div>
-        <div class="bottom2">
-            <h4>游戏网站</h4>
-            <p><a href="3dmgame.com">3DM</a></p>
-            <p><a href="http://store.steampowered.com/">Steam</a></p>
-            <p><a href="http://www.ali213.net/">游侠</a></p>
-        </div>
-        <div class="bottom3">
-            <h4>酷网</h4>
-            <p><a href="https://tympanus.net/Development/CreativeLinkEffects/">CreativeLinkEffects</a></p>
-            <p><a href="http://weavesilk.com/?tgxl">weavesilk</a></p>
-            <p><a href="http://www.iconfont.cn/">阿里巴巴矢量图标库</a></p>
-            <p></p>
-        </div>
-        <div class="bottom4">
-            <h4>关于我们</h4>
-            <div class="wechar">
-            <img src="images/微信.png">
-                <div class="triangle1">
+            <div class="bottom1">
+                <h4>友情链接</h4>
+                <p><a href="https://www.bilibili.com/">bilibili</a></p>
+                <p><a href="http://www.runoob.com/">runoob</a></p>
+                <p><a href="http://www.58pic.com/">千图网</a></p>
+            </div>
+            <div class="bottom2">
+                <h4>游戏网站</h4>
+                <p><a href="3dmgame.com">3DM</a></p>
+                <p><a href="http://store.steampowered.com/">Steam</a></p>
+                <p><a href="http://www.ali213.net/">游侠</a></p>
+            </div>
+            <div class="bottom3">
+                <h4>酷网</h4>
+                <p><a href="https://tympanus.net/Development/CreativeLinkEffects/">CreativeLinkEffects</a></p>
+                <p><a href="http://weavesilk.com/?tgxl">weavesilk</a></p>
+                <p><a href="http://www.iconfont.cn/">阿里巴巴矢量图标库</a></p>
+                <p></p>
+            </div>
+            <div class="bottom4">
+                <h4>关于我们</h4>
+                <div class="wechar">
+                    <img src="images/微信.png">
+                    <div class="triangle1">
 
-                </div>
-                <div class="detailed1">
-                    <img src="images/二维码.jpg">
+                    </div>
+                    <div class="detailed1">
+                        <img src="images/二维码.jpg">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-<script>
-    $(document).ready(function () {
-        $("#exit").click(function () {
-            $("#dbefore").css({"display":"block"})
-            $("#dafter").css({"display":"none"})
-            $("#touxiang").attr("src","images/用户.png");
-        })
 
-    })
-</script>
 </body>
 </html>
