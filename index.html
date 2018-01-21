@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/flexslider.css">
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
     <script  language="javascript" src="js/index.js" ></script>
 
@@ -173,7 +174,7 @@
                         </div>
                         <div>
                             <a href="#">
-                                <img src="images/文章2.jpg" width="100%">
+                                <img class="lazy" data-original="images/文章2.jpg" width="100%">
                             </a>
                         </div>
                         <div class="word">
@@ -189,7 +190,7 @@
                         </div>
                         <div>
                             <a href="#">
-                                <img src="images/文章3.jpg" width="100%">
+                                <img class="lazy" data-original="images/文章3.jpg" width="100%">
                             </a>
                         </div>
                         <div class="word">
@@ -200,17 +201,31 @@
             </div>
         </div>
         <div class="rights">
-            <div>
+            <div class="right-gonggao">
                 <h3>公告</h3>
-                <p>新网站上线啦</p>
+                <p>新网站上线啦,对于我们网站有什么地方想吐槽的欢迎来联系我们。</p>
             </div>
 
 
 
         </div>
     </div>
-    <div class="gotop" id="top1">
-        <a onclick="pageScroll()"><img src="images/返回顶部.png"></a>
+    <div class="gotop" >
+        <ul>
+            <li>
+                <div ><img class="wechar-down" src="images/微信-2.png"></div>
+            </li>
+            <div class="wechar-box">
+                <img src="images/公众号二维码.jpg">
+                <h3>创e官方微信号</h3>
+                <p>微信搜索chuangenet</p>
+            </div>
+            <li id="top1">
+                <a onclick="pageScroll()"><img src="images/返回顶部.png"></a>
+            </li>
+        </ul>
+
+
     </div>
     <div class="under">
         <div class="centerbox">
@@ -237,6 +252,7 @@
                 <h4>关于我们</h4>
                 <div class="wechar">
                     <img src="images/微信.png">
+
                     <div class="triangle1">
 
                     </div>

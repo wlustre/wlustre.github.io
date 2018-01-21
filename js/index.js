@@ -47,8 +47,11 @@ $(document).ready(function(){           /*淡入淡出头像*/
     });
 });
 
-
-
+//图片延迟加载
+$(function(){
+    $("img.lazy").lazyload();
+})
+// 轮播图
 $(function() {
     $(".flexslider").flexslider({
         animation: "solid",

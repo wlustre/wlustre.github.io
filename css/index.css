@@ -221,20 +221,17 @@ a{
 
 }
 .rights{
-    background-color: #fff;
     float: left;
     height: 540px;
+    width:260px;
+    border-right:1px solid #f3f3f3;
 }
 .lefts {
     background-color: #fff;
     float: left;
-
     width:310px;
 }
-.rights{
-    width:260px;
-    border-right:1px solid #f3f3f3;
-}
+
 .mains{
     width:600px;
     /*border-top:1px solid #f3f3f3 ;*/
@@ -256,7 +253,7 @@ a{
     background-color: #8bc34a;
 }
 .lefts-box3{
-    background-color: #9c27b0;
+    background-color: #e91e63;
 }
 .lefts-box1 img,
 .lefts-box2 img,
@@ -284,13 +281,13 @@ a{
 .lefts-border{
     width:290px;
     border: 3px solid #F1F4F9;
-    margin: 28px 0 0 20px;
+    margin: 28px 0 28px 20px;
     box-sizing: border-box;
 }
 
 /*文章*/
 .contents{
-    padding:4% 4% 4% 4%;
+    padding:4% 8% 4% 8%;
 }
 .f-title{
     font-size: 18px;
@@ -328,19 +325,95 @@ a{
 }
 
 /*右内容*/
+/*公告*/
+.right-gonggao{
+    background-color: #FFF;
+    padding:10px;
 
+}
+.right-gonggao h3{
+    margin:0 0 10px 0;
+    text-align: center;
+}
+.right-gonggao h3::after{
+    content:"";
+    background:url(../images/黑板-2.png) no-repeat center;
+    background-size:30px;
+    display: inline-block;
+    position: relative;
+    top: 10px ;
+    left:10px;
+    width:30px;
+    height:30px;
+}
+.right-gonggao p{
 
+}
 
 /*返回顶部*/
 .gotop{
     position: fixed;
-    right:100px;
-    bottom:70px;
+    right:5%;
+    bottom:130px;
     z-index: 101;
-    display: none;
+    display: block;
 }
 .gotop img{
+
+    width:40px;
+    padding:5px;
+}
+
+.gotop li{
+    list-style-type: none;
+    border-radius: 8px;
     width:50px;
+    height: 50px;
+    background-color: rgba(70, 66, 66, 0.38);
+
+    -webkit-transition:  0.3s;
+    -moz-transition:  0.3s;
+    -ms-transition:  0.3s;
+    -o-transition:  0.3s;
+    transition:  0.3s;
+}
+.gotop li:hover{
+    background: #4caf50;
+}
+#top1{
+    display: none;
+    position: fixed;
+    
+}
+.gotop:hover .wechar-box{
+    display: block;
+}
+/*微信公众号二维码*/
+.wechar-box{
+    position: absolute;
+    background: #fff;
+    border:1px solid #eeeeee;
+    right:50px;
+    top:0;
+    height: 100px;
+    padding:5px;
+    width:300px;
+    display: none;
+}
+.wechar-box img{
+    float: left;
+    width:100px;
+    padding:0;
+}
+.wechar-box h3{
+    padding-top:20px;
+    text-align: center;
+    color: #333;
+}
+.wechar-box p{
+    padding-top:5px;
+    text-align: center;
+    color: #666666;
 }
 /*底部链接*/
 .under{
