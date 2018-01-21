@@ -51,7 +51,7 @@ $(document).ready(function(){           /*淡入淡出头像*/
 $(function() {
     $("img.lazy").lazyload({
         effect: "fadeIn",
-        placeholder : "../img/loading.gif"
+        placeholder : "../img/white.gif"
     });
 
 });
@@ -79,6 +79,18 @@ function pageScroll(){
 window.onscroll=function() {
     var scroll = document.documentElement.scrollTop+document.body.scrollTop;
     console.log(scroll)
+    var topv2 = document.getElementById("top2")
+    if (scroll>500) {
+        topv2.style.position="fixed";
+        topv2.style.top="20px";
+        topv2.style.right="168px";
+    }
+    else{
+        topv2.style.position="relative";
+        topv2.style.top="0";
+        topv2.style.right="0";
+    }
+
     var topv = document.getElementById("top1")
     if (scroll>600) {
         topv.style.display="block";

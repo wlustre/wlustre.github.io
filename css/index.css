@@ -349,7 +349,15 @@ a{
 .right-gonggao p{
 
 }
-
+/*广告位*/
+.adver{
+    margin:15px 0;
+    height:200px;
+    background: #fff;
+}
+.adver{
+    text-align: center;
+}
 /*返回顶部*/
 .gotop{
     position: fixed;
@@ -370,7 +378,6 @@ a{
     width:50px;
     height: 50px;
     background-color: rgba(70, 66, 66, 0.38);
-
     -webkit-transition:  0.3s;
     -moz-transition:  0.3s;
     -ms-transition:  0.3s;
