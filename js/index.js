@@ -48,9 +48,14 @@ $(document).ready(function(){           /*淡入淡出头像*/
 });
 
 //图片延迟加载
-$(function(){
-    $("img.lazy").lazyload();
-})
+$(function() {
+    $("img.lazy").lazyload({
+        effect: "fadeIn",
+        placeholder : "../img/grey.gif"
+    });
+
+});
+
 // 轮播图
 $(function() {
     $(".flexslider").flexslider({
