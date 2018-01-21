@@ -51,7 +51,7 @@ $(document).ready(function(){           /*淡入淡出头像*/
 $(function() {
     $("img.lazy").lazyload({
         effect: "fadeIn",
-        placeholder : "../img/grey.gif"
+        placeholder : "../img/loading.gif"
     });
 
 });
