@@ -78,12 +78,14 @@ function pageScroll(){
 }
 window.onscroll=function() {
     var scroll = document.documentElement.scrollTop+document.body.scrollTop;
-    console.log(scroll)
-    var topv2 = document.getElementById("top2")
+    console.log(scroll);
+    var topv2 = document.getElementById("top2");
+    var margrigth = $(".container").css('marginLeft');
+    console.log(margrigth);
     if (scroll>500) {
         topv2.style.position="fixed";
         topv2.style.top="20px";
-        topv2.style.right="168px";
+        topv2.style.right=margrigth;
     }
     else{
         topv2.style.position="relative";
@@ -99,3 +101,4 @@ window.onscroll=function() {
         topv.style.display="none";
     }
 }
+

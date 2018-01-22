@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>创e网络联盟-测试</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/flexslider.css">
@@ -9,7 +10,69 @@
     <script src="js/jquery.lazyload.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
     <script  language="javascript" src="js/index.js" ></script>
+    <style>
+        @media screen and (max-width: 1200px ){
+            .content-one{
+                width: 90%;
+                margin:20px auto;
+            }
+            /*轮播*/
+            .flexslider{
+                float: left;
+                width:100%;
+                height:100%;
+            }
+            .flexslider img{
+                width:100%;
+                height:100%;
+            }
+            /*公告*/
+            .right-gonggao{
+               display: none;
+            }
+            /*/广告/*/
+            .adver{
+                display: none;
+            }
+            /*介绍3*/
+            .new-writing{
+                margin:50px 0;
+                width: 100%;
+            }
+            .writingbox{
+                 width:100%;
+             }
+            .writingbox img{
 
+            }
+
+            .container{
+                margin: 10px auto;
+                width:90%;
+            }
+            /*文章*/
+            .mains{
+                width:100%;
+            }
+            /*左内容*/
+            .lefts {
+                display: none;
+            }
+            .lefts-box1,
+            .lefts-box2,
+            .lefts-box3{
+                width: 230px;
+                margin:0px 27px 27px 7px;
+                border-radius: 6px;
+            }
+            .lefts-box1 img,
+            .lefts-box2 img,
+            .lefts-box3 img{
+                border-radius: 6px 6px 0 0;
+                width:230px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="header clearfix">
@@ -29,7 +92,10 @@
             <ul class="clearfix ">
                 <li class="dropdown"><a href="#"><img id="touxiang" class="imgdro" src="images/头像.jpg"></a>
                     <div class="dropdown-conten">
-
+                        <img src="images/创E.png">
+                        <p>学校：嘉应学院</p>
+                        <p>属性：校级社团</p>
+                        <p>所属：学术科技型</p>
                     </div>
                 </li>
             </ul>
@@ -45,7 +111,7 @@
                     <div class="sbottom">
                     </div>
                     <div class="stext">
-                        <p>&nbsp;&nbsp;&nbsp;绝地求生限量打折！每份只需88！另外有更多加速器优惠！</p>
+                        <p>&nbsp;&nbsp;&nbsp;梅州公交大全</p>
                     </div>
                 </div></a></li>
                 <li><a href="#"><div>
@@ -53,7 +119,7 @@
                     <div class="sbottom">
                     </div>
                     <div class="stext">
-                        <p>&nbsp;&nbsp;&nbsp;《看门狗2》“决斗”模式演示公开 三大全新PVP玩法</p>
+                        <p>&nbsp;&nbsp;&nbsp;MyShow原创视频大赛！！</p>
                     </div>
                 </div></a></li>
                 <li><a href="#"><div>
@@ -61,7 +127,7 @@
                     <div class="sbottom">
                     </div>
                     <div class="stext">
-                        <p>&nbsp;&nbsp;&nbsp;《刺客：起源》对比初代《刺客信条》：十年画质飞跃</p>
+                        <p>&nbsp;&nbsp;&nbsp;梅州公交大全</p>
                     </div>
                 </div></a></li>
                 <li><a href="#"><div>
@@ -69,7 +135,7 @@
                     <div class="sbottom">
                     </div>
                     <div class="stext">
-                        <p>&nbsp;&nbsp;&nbsp;夏威夷众议员硬刚EA到底？再批《星球大战：前线2》开箱要素</p>
+                        <p>&nbsp;&nbsp;&nbsp;MyShow原创视频大赛！！</p>
                     </div>
                 </div></a></li>
             </ul>
@@ -88,8 +154,18 @@
                     <img src="images/writing-2.jpg">
                     <div class="xianxi">
                     <h2>八大部门</h2>
-                    <p>秘书处&nbsp;&nbsp;|&nbsp;&nbsp;财务部&nbsp;&nbsp;|&nbsp;&nbsp;宣传部&nbsp;&nbsp;|&nbsp;&nbsp;联络部</p>
-                    <p>组织部&nbsp;&nbsp;|&nbsp;&nbsp;设计部&nbsp;&nbsp;|&nbsp;&nbsp;网络部&nbsp;&nbsp;|&nbsp;&nbsp;软件部</p>
+                        <ul>
+                            <li><a href="#">秘书处&nbsp|&nbsp</a></li>
+                            <li><a href="#">财务部&nbsp|&nbsp</a></li>
+                            <li><a href="#">宣传部&nbsp|&nbsp</a></li>
+                            <li><a href="#">联络部</a></li>
+                            <li><a href="#">组织部&nbsp|&nbsp</a></li>
+                            <li><a href="#">设计部&nbsp|&nbsp</a></li>
+                            <li><a href="#">网络部&nbsp|&nbsp</a></li>
+                            <li><a href="#">软件部</a></li>
+
+                        </ul>
+
                     <p>&nbsp</p>
                     <h3 class="nav-j">❯</h3>
                 </div>
@@ -118,16 +194,16 @@
                     </div>
                 </div>
                 <div class="lefts-box2">
-                    <img src="images/ae.png">
+                    <img src="images/ae.jpg">
                     <div class="lefts-box-title">
-                        <h3>ps软件下载及安装</h3>
+                        <h3>AE软件下载及安装</h3>
                         <p>就是这么6</p>
                     </div>
                 </div>
                 <div class="lefts-box3">
-                    <img src="images/pr.png">
+                    <img src="images/pr.jpg">
                     <div class="lefts-box-title">
-                        <h3>ps软件下载及安装</h3>
+                        <h3>PR软件下载及安装</h3>
                         <p>就是这么6</p>
                     </div>
                 </div>
@@ -140,6 +216,7 @@
                 <div class="contents">
                     <h2 class="f-title">
                         <span>LATEST ARTICLES</span>
+                        <span class="more"></span>
                     </h2>
                     <div>
                         <div class="entry-header">
@@ -167,10 +244,10 @@
                     </div>
                     <div>
                         <div class="entry-header">
-                            <h2 class="entry-title"><a href="#">万代新作《海贼王：世界探索者》曝光！PS4动作游戏</a></h2>
+                            <h2 class="entry-title"><a href="#">别说在大学你还不会装系统</a></h2>
                         </div>
                         <div class="post-title">
-                            2017-12-06  &nbsp;|&nbsp; 推荐
+                            2017-10-18  &nbsp;|&nbsp; 迷糊糊一拳
                         </div>
                         <div>
                             <a href="#">
@@ -178,15 +255,15 @@
                             </a>
                         </div>
                         <div class="word">
-                            <p>导读:日前曾有爆料称，万代南梦宫将于本月15日公布5款游戏，根据现在《Fami通》周刊放出的本周杂志预览情报来看，其中一款则是海贼王PS4游戏新作《海贼王：世界探索者（One Piece: World Seeker）》。</p>
+                            <p>导读:不定期更新</p>
                         </div>
                     </div>
                     <div>
                         <div class="entry-header">
-                            <h2 class="entry-title"><a href="#">《怪物猎人世界》Beta版12分钟演示 大神神操作单杀雄火龙!</a></h2>
+                            <h2 class="entry-title"><a href="#">百团招新你有来吗</a></h2>
                         </div>
                         <div class="post-title">
-                            2017-12-10  &nbsp;|&nbsp; 推荐
+                            2017-10-14  &nbsp;|&nbsp;  嘉应学院创E网络联盟
                         </div>
                         <div>
                             <a href="#">
@@ -194,7 +271,13 @@
                             </a>
                         </div>
                         <div class="word">
-                            <p>导读:《怪物猎人世界（Monster Hunter World）》Beta版今日正式开启，日前，Youtube频道用户Apex Gaming上传了一份Beta测试版的12分钟速度单杀雄火龙视频，一起来看看大神的神操作。</p>
+                            <p>导读:注意啦！注意啦！注意啦！
+
+                                错过了百团招新的小鲜肉们
+
+                                现在可以线上报名啦！
+
+                                会员和干事报名都可以哟~</p>
                         </div>
                     </div>
                 </div>
@@ -215,14 +298,15 @@
     </div>
     <div class="gotop" >
         <ul>
-            <li>
-                <div ><img class="wechar-down" src="images/微信-2.png"></div>
+            <li >
+                <div class="wechar-down"><img  src="images/微信-2.png"></div>
             </li>
             <div class="wechar-box">
                 <img src="images/公众号二维码.jpg">
                 <h3>创e官方微信号</h3>
                 <p>微信搜索chuangenet</p>
             </div>
+
             <li id="top1">
                 <a onclick="pageScroll()"><img src="images/返回顶部.png"></a>
             </li>
@@ -234,15 +318,15 @@
         <div class="centerbox">
             <div class="bottom1">
                 <h4>友情链接</h4>
-                <p><a href="https://www.bilibili.com/">bilibili</a></p>
+                <p><a href="https://github.com/">github</a></p>
                 <p><a href="http://www.runoob.com/">runoob</a></p>
                 <p><a href="http://www.58pic.com/">千图网</a></p>
             </div>
             <div class="bottom2">
-                <h4>游戏网站</h4>
-                <p><a href="3dmgame.com">3DM</a></p>
-                <p><a href="http://store.steampowered.com/">Steam</a></p>
-                <p><a href="http://www.ali213.net/">游侠</a></p>
+                <h4>嘉应常用</h4>
+                <p><a href="http://jwc.jyu.edu.cn/jwxt/">嘉应正方系统</a></p>
+                <p><a href="http://xg.jyu.edu.cn/epstar/web/swms/mainframe/home.jsp">学工管理系统</a></p>
+                <p><a href="http://my.jyu.edu.cn/index.portal?.pn=p1155">一卡通</a></p>
             </div>
             <div class="bottom3">
                 <h4>酷网</h4>
@@ -266,6 +350,18 @@
             </div>
         </div>
     </div>
+<script>
+    // 弹出微信公众号二维码
+    $(document).ready(function(){           /*淡入淡出头像*/
+        $(".wechar-down").hover(function() {
+            $(".wechar-box").animate({top:'0',opacity:'1'})
+        })
+        $(".wechar-down").mouseout(function() {
+            $(".wechar-box").animate({top:'20px',opacity:'0'});
+            $(".wechar-box").css({"top":"0"});
+        })
 
+    });
+</script>
 </body>
 </html>
