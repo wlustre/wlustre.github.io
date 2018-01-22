@@ -60,9 +60,45 @@ a{
     margin:15px 20px;
     transition: 0.3s;
 }
-
+.nav2 li a:hover,
 .navigation li a:hover{
     color:#FF6F3C;
+}
+/*菜单*/
+.menu{
+    padding:10px 0;
+    position: absolute;
+    float: left;
+    right:8%;
+}
+.nav2 h3{
+    text-align: center;
+    padding:10px;
+    color: #FFF;
+}
+.nav2{
+    position: fixed;
+    top: 0;
+    right: -200px;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 30;
+    width: 200px;
+    background-color:#000000;
+}
+.nav2 li{
+    list-style-type: none;
+    border-bottom: 1px solid #333333;
+}
+.nav2 li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    padding:10px 0;
+    margin:15px 20px;
+    transition: 0.3s;
 }
 /*头像*/
 .dropdown{
@@ -154,8 +190,8 @@ a{
 .flex-control-nav{
     margin:0;
     padding:0;
-    top:380px;
-    left:300px;
+    top:103%;
+    left:40%;
     position: absolute;
     /*border:1px solid;*/
 }
@@ -325,7 +361,7 @@ a{
 .more{
     position: relative;
     display: block;
-    left:88%;
+    left:86%;
     bottom:25px;
     width: 60px;
     height: 22px;
@@ -475,6 +511,7 @@ a{
 /*微信公众号二维码*/
 .wechar-box{
     position: absolute;
+    display: none;
     opacity: 0;
     background: #fff;
     border:1px solid #eeeeee;
@@ -582,7 +619,7 @@ a{
 .centerbox a:hover{
     opacity: 0.8;
 }
-/*常规手机分辨率响应设计*/
+/*常规手机平板分辨率响应设计*/
 @media screen and (max-width: 1000px ){
 
 }

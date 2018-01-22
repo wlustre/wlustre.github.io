@@ -12,6 +12,14 @@
     <script  language="javascript" src="js/index.js" ></script>
     <style>
         @media screen and (max-width: 1200px ){
+
+            /*导航*/
+            .navigation{
+                display: none;
+            }
+            .dropdown{
+                display: none;
+            }
             .content-one{
                 width: 90%;
                 margin:20px auto;
@@ -26,6 +34,10 @@
                 width:100%;
                 height:100%;
             }
+            .flex-control-nav{
+                top:92%;
+                left:70%;
+            }
             /*公告*/
             .right-gonggao{
                display: none;
@@ -36,23 +48,38 @@
             }
             /*介绍3*/
             .new-writing{
-                margin:50px 0;
+                margin:20px 0;
                 width: 100%;
             }
             .writingbox{
                  width:100%;
              }
-            .writingbox img{
-
+            .xianxi p{
+                font-size: 12px;
+            }
+            .xianxi li a{
+                font-size: 12px;
+            }
+            .xianxi{
+                width:58%;
             }
 
             .container{
                 margin: 10px auto;
                 width:90%;
             }
+            .nav-j{
+
+                left:98%;
+
+            }
             /*文章*/
             .mains{
                 width:100%;
+            }
+            /*右内容*/
+            .rights{
+                display: none;
             }
             /*左内容*/
             .lefts {
@@ -71,6 +98,75 @@
                 border-radius: 6px 6px 0 0;
                 width:230px;
             }
+            /*置顶*/
+            .gotop img{
+                width:30px;
+                padding:3px;
+            }
+            .gotop li{
+                width:36px;
+                height: 36px;
+            }
+            .wechar-box img{
+                float: left;
+                width:100px;
+                padding:0;
+            }
+            .wechar-box{
+
+                top:-20px;
+                right:36px;
+            }
+            /*尾部*/
+            .centerbox h4{
+                font-size: 14px;
+            }
+            .centerbox p,.centerbox h4,.centerbox a{
+                font-size: 12px;
+            }
+            .centerbox{
+                width:100%;
+                margin:0 auto;
+                height:150px;
+            }
+            .bottom4{
+                float: left;
+                height:150px;
+                width:20%;
+                margin:0;
+            }
+            /*问题反馈*/
+            .detailed1 img{
+                width:180px;
+            }
+            .detailed1{
+                display: none;
+                position: absolute;
+                z-index: 102;
+                top:-150px;
+                left:-180px;
+                width:270px;
+                height:200px;
+            }
+            .wechar:hover .triangle1{
+                display: none;
+            }
+            .wechar{
+                width:50px;
+                height:50px;
+                position: relative;
+                left:12%;
+            }
+            .gotop{
+                position: fixed;
+                right:5%;
+                bottom:130px;
+                z-index: 101;
+               
+            }
+            .bottom4{
+                margin:0;
+            }
         }
     </style>
 </head>
@@ -79,13 +175,24 @@
         <div class="logo">
             <h2>CENET</h2>
         </div>
+        <div class="menu">
+            <img src="images/菜单.png">
+        </div>
+        <div class="nav2" id="navclick">
+            <h3>创e网络联盟</h3>
+            <ul class="clearfix">
+                <li ><a href="#">首页</a></li>
+                <li><a href="#">文章</a></li>
+                <li><a href="#">活动</a></li>
+                <li><a href="#">相册</a></li>
+            </ul>
+        </div>
         <div class="navigation ">
             <ul class="clearfix">
                 <li ><a href="#">首页</a></li>
                 <li><a href="#">文章</a></li>
                 <li><a href="#">活动</a></li>
                 <li><a href="#">相册</a></li>
-
             </ul>
         </div>
         <div class="navigation-2">
@@ -336,7 +443,7 @@
                 <p></p>
             </div>
             <div class="bottom4">
-                <h4>关于我们</h4>
+                <h4>问题反馈</h4>
                 <div class="wechar">
                     <img src="images/微信.png">
 
@@ -352,14 +459,29 @@
     </div>
 <script>
     // 弹出微信公众号二维码
-    $(document).ready(function(){           /*淡入淡出头像*/
+    $(document).ready(function(){
         $(".wechar-down").hover(function() {
             $(".wechar-box").animate({top:'0',opacity:'1'})
+            $(".wechar-box").css({"display":"block"});
         })
         $(".wechar-down").mouseout(function() {
             $(".wechar-box").animate({top:'20px',opacity:'0'});
-            $(".wechar-box").css({"top":"0"});
+            $(".wechar-box").css({"display":"none"});
         })
+
+        $(function(){
+            $('.menu').click(function(event){
+                event.stopImmediatePropagation();//取消事件冒泡；
+                $(".nav2").animate({right:"0"});
+            });
+
+            $(document).bind("click",function(e){ //点击窗口外地方消失
+                var target = $(e.target);
+                if(target.closest(".nav2").length == 0){
+                    $(".nav2").animate({right:"-200px"});
+                }
+            })
+        });
 
     });
 </script>
