@@ -70,6 +70,7 @@ a{
     position: absolute;
     float: left;
     right:8%;
+    display: none;
 }
 .nav2 h3{
     text-align: center;
@@ -85,6 +86,7 @@ a{
     z-index: 30;
     width: 200px;
     background-color:#000000;
+    display: none;
 }
 .nav2 li{
     list-style-type: none;
