@@ -24,50 +24,13 @@
     }
 })(jQuery);
 
-$(document).ready(function(){           /*淡入淡出游戏卡*/
-    $(".shop-content1").hoverDelay({
-        hoverEvent:function() {
-            $(".detailed").fadeIn();
-            $(".triangle").fadeIn();
-        },
-        outEvent: function(){
-            $(".detailed").fadeOut();
-            $(".triangle").fadeOut();
-        }
-    });
-});
-$(document).ready(function(){           /*淡入淡出头像*/
-    $(".dropdown").hoverDelay({
-        hoverEvent:function() {
-            $(".dropdown-conten").fadeIn();
-        },
-        outEvent: function(){
-            $(".dropdown-conten").fadeOut();
-        }
-    });
-});
-
 //图片延迟加载
 $(function() {
     $("img.lazy").lazyload({
         effect: "fadeIn",
         placeholder : "../img/white.gif"
     });
-
 });
-
-// 轮播图
-$(function() {
-    $(".flexslider").flexslider({
-        animation: "solid",
-        slideshowSpeed: 3500, //展示时间间隔ms
-        animationSpeed: 500, //滚动时间ms
-        prevText: '❮',
-        nextText: '❯',
-        directionNav:"true"
-    });
-});
-
 
 // 置顶
 function pageScroll(){
@@ -102,3 +65,48 @@ window.onscroll=function() {
     }
 }
 
+$(document).ready(function(){
+    //头像淡入淡出
+    $(".dropdown").hoverDelay({
+        hoverEvent:function() {
+            $(".dropdown-conten").fadeIn();
+        },
+        outEvent: function(){
+            $(".dropdown-conten").fadeOut();
+        }
+    });
+    // 轮播图
+    $(function() {
+        $(".flexslider").flexslider({
+            animation: "solid",
+            slideshowSpeed: 3500, //展示时间间隔ms
+            animationSpeed: 500, //滚动时间ms
+            prevText: '❮',
+            nextText: '❯',
+            directionNav:"true"
+        });
+    });
+
+    // 弹出微信公众号二维码
+    $(".wechar-down").mouseenter(function() {
+        $(".wechar-box").show(300);
+    })
+    $(".wechar-down").mouseleave(function() {
+        $(".wechar-box").hide(300);
+    })
+
+    //手机上菜单呼出和隐藏
+    $(function(){
+        $('.menu').click(function(event){
+            event.stopImmediatePropagation();//取消事件冒泡；
+            $(".nav2").animate({right:"0"});
+        });
+
+        $(document).bind("click",function(e){ //点击窗口外地方消失
+            var target = $(e.target);
+            if(target.closest(".nav2").length == 0){
+                $(".nav2").animate({right:"-200px"});
+            }
+        })
+    });
+});

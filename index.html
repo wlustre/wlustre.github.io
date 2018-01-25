@@ -53,9 +53,11 @@
                 display: none;
             }
             /*介绍3*/
+
             .new-writing{
                 margin:20px 0;
                 width: 100%;
+                left:0px;
             }
             .writingbox{
                  width:100%;
@@ -174,6 +176,24 @@
                 margin:0;
             }
         }
+        @media screen and (max-width: 320px ){
+            .writingbox{
+                height: 80px;
+            }
+            .writingbox img{
+                height: 80px;
+            }
+            .new-writing h2{
+                font-size: 12px;
+            }
+            .xianxi p{
+                font-size: 10px;
+            }
+            .xianxi li a{
+                font-size: 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -259,7 +279,7 @@
                     <img src="images/writing-1.jpg">
                     <div class="xianxi">
                         <h2>创e网络联盟</h2>
-                        <p>嘉大优秀学生社团，自2009年6月11日成立之日起的这8年来，主打各种多媒体软件一直致力于提高社员的电脑技能和创新能力。</p>
+                        <p>嘉大优秀学生社团，于2009年6月11日成立。主打各种多媒体软件一直致力于提高社员的电脑技能和创新能力。</p>
                         <h3 class="nav-j">❯</h3>
                     </div>
             </div></a>
@@ -411,14 +431,15 @@
     </div>
     <div class="gotop" >
         <ul>
-            <li >
-                <div class="wechar-down"><img  src="images/微信-2.png"></div>
+            <li class="wechar-down">
+                <div ><img  src="images/微信-2.png"></div>
+                <div class="wechar-box">
+                    <img src="images/公众号二维码.jpg">
+                    <h3>创e官方微信号</h3>
+                    <p>微信搜索chuangenet</p>
+                </div>
             </li>
-            <div class="wechar-box">
-                <img src="images/公众号二维码.jpg">
-                <h3>创e官方微信号</h3>
-                <p>微信搜索chuangenet</p>
-            </div>
+
 
             <li id="top1">
                 <a onclick="pageScroll()"><img src="images/返回顶部.png"></a>
@@ -463,33 +484,6 @@
             </div>
         </div>
     </div>
-<script>
-    // 弹出微信公众号二维码
-    $(document).ready(function(){
-        $(".wechar-down").hover(function() {
-            $(".wechar-box").animate({top:'0',opacity:'1'})
-            $(".wechar-box").css({"display":"block"});
-        })
-        $(".wechar-down").mouseout(function() {
-            $(".wechar-box").animate({top:'20px',opacity:'0'});
-            $(".wechar-box").css({"display":"none"});
-        })
 
-        $(function(){
-            $('.menu').click(function(event){
-                event.stopImmediatePropagation();//取消事件冒泡；
-                $(".nav2").animate({right:"0"});
-            });
-
-            $(document).bind("click",function(e){ //点击窗口外地方消失
-                var target = $(e.target);
-                if(target.closest(".nav2").length == 0){
-                    $(".nav2").animate({right:"-200px"});
-                }
-            })
-        });
-
-    });
-</script>
 </body>
 </html>
