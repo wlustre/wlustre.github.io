@@ -1,0 +1,42 @@
+.main{
+    width:1140px;
+    margin:40px auto;
+}
+.nav-main{
+    float: left;
+    background-color: #FFF;
+    width: 210px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.nav-main li{
+    list-style-type: none;
+    padding:0 30px;
+    height:52px;
+    line-height: 52px;
+    color: #333;
+    cursor: pointer;
+}
+.nav-main li:hover{
+    background-color: #4caf50;
+}
+.active{
+    border-left: 2px solid #4caf50;
+}
+.num{
+    float: left;
+    width:900px;
+    margin-left:30px;
+}
+.nav-card{
+    display: none;
+    height:500px;
+    padding:20px 30px;
+    background-color: #fff;
+}
+.nav-card h3{
+    display: block;
+    padding-bottom:20px;
+    border-bottom: 1px solid #eeeeee;
+    font-weight: 500;
+}
