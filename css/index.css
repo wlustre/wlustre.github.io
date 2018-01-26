@@ -6,164 +6,7 @@ body{
     background-color: #f1f4f9;
     font-family: 微软雅黑;
 }
-a{
-    text-decoration: none;
-}
-.clearfix:before,
-.clearfix:after {
-    display: table;
-    content: " ";
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix{
-    *zoom: 1;
-}
 
-.header{
-    background-color: #4caf50;
-    width: 100%;
-}
-/*.nav{*/
-    /*position: relative;*/
-    /*width:1200px;*/
-/*}*/
-.navigation{
-    position: relative;
-    float: left;
-    left:15%;
-}
-.navigation-2{
-    position: absolute;
-    float: left;
-    right:10%;
-}
-.navigation ul{
-    margin: 0;
-    padding:0;
-}
-.navigation-2 li,
-.navigation li{
-    float: left;
-    list-style-type: none;
-
-
-}
-.navigation-2 li a,
-.navigation li a{
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
-    padding:10px 0;
-    margin:15px 20px;
-    transition: 0.3s;
-}
-.nav2 li a:hover,
-.navigation li a:hover{
-    color:#FF6F3C;
-}
-/*菜单*/
-.menu{
-    padding:10px 0;
-    position: absolute;
-    float: left;
-    right:8%;
-    display: none;
-}
-.nav2 h3{
-    text-align: center;
-    padding:10px;
-    color: #FFF;
-}
-.nav2{
-    position: fixed;
-    top: 0;
-    right: -200px;
-    bottom: 0;
-    overflow: hidden;
-    z-index: 30;
-    width: 200px;
-    background-color:#000000;
-    display: none;
-}
-.nav2 li{
-    list-style-type: none;
-    border-bottom: 1px solid #333333;
-}
-.nav2 li a{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
-    padding:10px 0;
-    margin:15px 20px;
-    transition: 0.3s;
-}
-/*头像*/
-.dropdown{
-    position: relative;
-    bottom:15px;
-    z-index: 2;
-
-}
-.imgdro{
-    position: relative;
-    border-radius: 50%;
-    border: 2px solid #eeeeee;
-    width:46px;
-    height:46px;
-    right: 0;
-    top:0;
-    z-index: 100000;
-    transition: all .3s;
-}
-.dropdown:hover .imgdro,.dropdown-conten:hover .imgdro{
-    width:60px;
-    top:10px;
-    right:-10px;
-    height:60px;
-    border: 2px solid #eeeeee;
-}
-.dropdown-conten{                                     /*下拉盒子*/
-    top: 70px;
-    right:-88px;
-    width: 250px;
-    height:260px;
-    background: #fff;
-    display: none;
-    position: absolute;
-    border: 1px solid rgba(136, 125, 136, 0.34);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-}
-.dropdown-conten img{
-    margin:30px 35px 0 35px;
-    width:180px;
-}
-.dropdown-conten p{
-    margin:4px 65px;
-    color: #333333;
-    font-size: 14px;
-}
-
-
-.logo{
-    position: relative;
-    float: left;
-    left:10%;
-    top: 15px;
-    font-size: 20px;
-    color: white;
-    width: 69.2px;
-    height: 69.2px;
-}
-.logo img{
-    width: 69.2px;
-    height: 69.2px;
-}
 /*内容1*/
 .content-one{
     width: 1200px;
@@ -219,6 +62,9 @@ a{
     left:10px;
     margin-left:35px;
 }
+.writingbox:hover{
+    box-shadow: 0 2px  10px #ccc;
+}
 .new-writing h2{
     color: #4e5e6a;
     margin: 0 0 10px;
@@ -232,6 +78,7 @@ a{
     width:425px;
     margin-bottom:20px;
     background-color: #fff;
+    transition: 0.3s;
 
 }
 .writingbox img{
@@ -260,6 +107,7 @@ a{
 .xianxi li a{
     font-size:14px;
     color: #414a51;
+    cursor: pointer;
 }
 .xianxi li a:hover{
     color: #FF6F3C;
@@ -458,7 +306,10 @@ a{
 .right-gonggao{
     background-color: #FFF;
     padding:10px;
-
+    transition:0.3s;
+}
+.right-gonggao:hover{
+    box-shadow: 0 2px 10px #ccc;
 }
 .right-gonggao h3{
     margin:0 0 10px 0;
@@ -483,155 +334,14 @@ a{
     margin:15px 0;
     height:200px;
     background: #fff;
-}
-.adver{
     text-align: center;
+    transition:0.3s;
 }
-/*返回顶部*/
-.gotop{
-    position: fixed;
-    right:5%;
-    bottom:130px;
-    z-index: 101;
-    display: block;
-}
-.gotop ul{
-}
-.gotop img{
-    width:35px;
-    padding:5px;
+.adver:hover{
+    box-shadow: 0 2px 10px #ccc;
 }
 
-.gotop li{
-    list-style-type: none;
-    width:45px;
-    height: 45px;
-    background-color: rgba(13, 47, 63, 0.38);
-    -webkit-transition:  0.3s;
-    -moz-transition:  0.3s;
-    -ms-transition:  0.3s;
-    -o-transition:  0.3s;
-    transition:  0.3s;
-}
-.gotop li:hover{
-    background: #4caf50;
-}
-#top1{
-    display: none;
-    position: fixed;
 
-}
-
-/*微信公众号二维码*/
-.wechar-box{
-    position: absolute;
-    display: none;
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    top:0;
-    right:45px;
-    height: 100px;
-    padding:5px;
-    width:300px;
-}
-.wechar-box img{
-    float: left;
-    width:100px;
-    padding:0;
-}
-.wechar-box h3{
-    padding-top:20px;
-    text-align: center;
-    color: #333;
-}
-.wechar-box p{
-    padding-top:5px;
-    text-align: center;
-    color: #666666;
-}
-/*底部链接*/
-.under{
-
-    background-color: #fff;
-    height:170px;
-    border-top: 1px solid #eeeeee;
-}
-.centerbox{
-    width:68%;
-    margin:0 auto;
-    height:150px;
-}
-.bottom1,.bottom2,.bottom3{
-    float: left;
-    height:150px;
-    width:19.6%;
-    margin:20px 0 0 0;
-    /*border: 1px solid #ffffff;*/
-}
-.bottom3{
-    margin-right:10%;
-}
-.bottom4{
-    float: left;
-    height:150px;
-    width:29.4%;
-    margin:20px 0 0 0;
-    border-left: 1px solid #eaeaea;
-}
-.wechar{
-    width:50px;
-    height:50px;
-    position: relative;
-    left:42%;
-}
-.wechar>img{
-    width:50px;
-}
-.wechar:hover .triangle1,.wechar:hover .detailed1{
-    display: block;
-}
-.triangle1{
-    display: none;
-    z-index: 102;
-    position: absolute;
-    width:0;
-    height: 0;
-    top:10px;
-    left:100%;
-    border-top:5px solid transparent;
-    border-right:10px solid #ccd9e3;
-    border-bottom:5px solid transparent;
-}
-.detailed1 img{
-    width:270px;
-    border:1px solid #eeeeee;
-    border-radius: 10px;
-}
-.detailed1{
-    display: none;
-    position: absolute;
-    z-index: 102;
-    top:-270px;
-    left:60px;
-    width:270px;
-    height:200px;
-}
-.centerbox p,.centerbox h4,.centerbox a{
-    color: #757575;;
-    text-align: center;
-    font-size: 14px;
-    display: block;
-    margin:5px 0;
-}
-.centerbox h4{
-    color:#424242;
-    font-size: 16px;
-    margin:10px 0;
-}
-
-.centerbox a:hover{
-    opacity: 0.8;
-}
 /*常规手机平板分辨率响应设计*/
 @media screen and (max-width: 1000px ){
 

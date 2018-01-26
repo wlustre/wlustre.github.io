@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>创e网络联盟-测试</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/head-foot.css">
     <link rel="stylesheet" type="text/css" href="css/flexslider.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
@@ -283,22 +284,20 @@
                         <h3 class="nav-j">❯</h3>
                     </div>
             </div></a>
-            <a href="#"><div class="writingbox">
+            <a onclick="ulrHtml(0)" style="cursor: pointer;"><div class="writingbox">
                     <img src="images/writing-2.jpg">
                     <div class="xianxi">
                     <h2>八大部门</h2>
                         <ul>
-                            <li><a href="#">秘书处&nbsp|&nbsp</a></li>
-                            <li><a href="#">财务部&nbsp|&nbsp</a></li>
-                            <li><a href="#">宣传部&nbsp|&nbsp</a></li>
-                            <li><a href="#">联络部</a></li>
-                            <li><a href="#">组织部&nbsp|&nbsp</a></li>
-                            <li><a href="#">设计部&nbsp|&nbsp</a></li>
-                            <li><a href="#">网络部&nbsp|&nbsp</a></li>
-                            <li><a href="#">软件部</a></li>
-
+                            <li><a  onclick="ulrHtml(0)">秘书处&nbsp|&nbsp</a></li>
+                            <li><a  onclick="ulrHtml(1)">财务部&nbsp|&nbsp</a></li>
+                            <li><a  onclick="ulrHtml(2)">宣传部&nbsp|&nbsp</a></li>
+                            <li><a  onclick="ulrHtml(3)">联络部</a></li>
+                            <li><a  onclick="ulrHtml(4)">组织部&nbsp|&nbsp</a></li>
+                            <li><a  onclick="ulrHtml(5)">设计部&nbsp|&nbsp</a></li>
+                            <li><a  onclick="ulrHtml(6)">网络部&nbsp|&nbsp</a></li>
+                            <li><a  onclick="ulrHtml(7)">软件部</a></li>
                         </ul>
-
                     <p>&nbsp</p>
                     <h3 class="nav-j">❯</h3>
                 </div>
@@ -484,6 +483,11 @@
             </div>
         </div>
     </div>
-
+<script>
+    function ulrHtml(num){
+        var toUrl = "department.html?"+num;
+        window.open(toUrl);
+    }
+</script>
 </body>
 </html>

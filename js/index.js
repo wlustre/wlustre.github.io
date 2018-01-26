@@ -89,6 +89,7 @@ $(document).ready(function(){
 
     // 弹出微信公众号二维码
     $(".wechar-down").mouseenter(function() {
+        $(".wechar-box").hide();
         $(".wechar-box").show(300);
     })
     $(".wechar-down").mouseleave(function() {
