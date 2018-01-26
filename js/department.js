@@ -12,3 +12,15 @@ $(document).ready(function () {
         $(".num>div").eq(index).show().siblings().hide();
     })
 });
+window.onscroll=function() {
+    var scroll = document.documentElement.scrollTop+document.body.scrollTop;
+    console.log(scroll);
+
+    var topv = document.getElementById("top1")
+    if (scroll>600) {
+        topv.style.display="block";
+    }
+    else if(scroll<600){
+        topv.style.display="none";
+    }
+}
