@@ -1,0 +1,79 @@
+body{
+    background-color: #e7e5d4;
+    font-family: 微软雅黑;
+}
+/*图片*/
+.mainbox{
+    margin:0 auto;
+}
+.conten{
+    position: relative;
+    float: left;
+    height: 350px;
+}
+.frame{
+    position: relative;
+    border-radius: 2px;
+    width:300px;
+    padding:6px;
+    margin-top:100px;
+    margin-right:20px;
+    margin-left:20px;
+    background-color: #fff;
+    box-shadow:0px 10px 10px -5px rgba(0,0,0,0.5);
+    transition: .3s ease;
+    cursor: pointer;
+}
+.photoshow{
+    width:300px;
+    transition: .3s ease;
+    overflow: hidden;
+}
+.photoshow img{
+    position: relative;
+    left:0;
+    width:300px;
+    transition: .3s ease;
+}
+.text1,
+.text2{
+
+    width:280px;
+    height:30px;
+    margin:8px 0;
+    background-color:#f0f0f0 ;
+    transition: .3s ease;
+    opacity:0;
+}
+.text1{
+    position: absolute;
+    bottom:42px;
+}
+.text2{
+    position: absolute;
+    bottom:5px;
+}
+.text1 p,
+.text2 p{
+    position: relative;
+    left:-60px;
+    padding-left:10px;
+    line-height: 30px;
+    font-weight: 600;
+    opacity:0;
+
+}
+.date{
+    z-index: 1;
+    width:50px;
+    height:30px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background-color: #CC320F;
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+    transition: .5s ease;
+}
