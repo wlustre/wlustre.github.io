@@ -8,12 +8,17 @@ body{
 .box{
     position: relative;
     float: left;
+    top:0;
     margin:15px;
     background-color: #FFF;
-    padding:5px;
+    padding:4px;
     border:1px #FFF;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #333333;
+    border-radius: 2px;
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.box:hover{
+    top:-10px;
 }
 .container a img{
     width:280px;
