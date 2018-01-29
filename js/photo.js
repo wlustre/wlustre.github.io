@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    var contenWidth=$(".conten").width();
-    console.log(contenWidth);
-    var num=Math.floor($(window).width()/contenWidth);
-    var mainboxWidth=num*contenWidth;
+    var contenWidth=$(".conten").width(); //获取盒子的高
+    //console.log(contenWidth);
+    var num=Math.floor($(window).width()/contenWidth);  //获取盒子的个数
+    var mainboxWidth=num*contenWidth;                   //设置宽
     $(".mainbox").css({width:""+mainboxWidth+"px"});
 
     var framehight; //图片高度的全局变量

@@ -1,0 +1,24 @@
+body{
+    background-color: #e7e5d4;
+    font-family: 微软雅黑;
+}
+.container{
+    margin:20px auto;
+}
+.box{
+    position: relative;
+    float: left;
+    margin:15px;
+
+}
+.content{
+    background-color: #FFF;
+    padding:5px;
+    border:1px #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #333333;
+}
+.content img{
+    width:280px;
+    height: auto;
+}
