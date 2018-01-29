@@ -2,6 +2,20 @@ body{
     background-color: #e7e5d4;
     font-family: 微软雅黑;
 }
+/*导航*/
+.daohang{
+    position: relative;
+    left:5%;
+    top:10px;
+    margin:10px 0 ;
+    width:100%;
+
+}
+.daohang > a {
+    font-weight: 600;
+    color: #515151;
+    font-size: 14px;
+}
 /*图片*/
 .mainbox{
     margin:0 auto;

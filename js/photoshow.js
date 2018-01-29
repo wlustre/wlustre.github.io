@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var contenWidth=$(".box").outerWidth(true); //获取盒子的宽
-    //console.log(contenWidth);
+    console.log(contenWidth);
     var num=Math.floor($(window).width()/contenWidth);  //获取盒子的个数
 
     console.log(num)

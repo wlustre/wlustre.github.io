@@ -9,16 +9,26 @@ body{
     position: relative;
     float: left;
     margin:15px;
-
-}
-.content{
     background-color: #FFF;
     padding:5px;
     border:1px #FFF;
     border-radius: 5px;
     box-shadow: 0 0 5px #333333;
 }
-.content img{
+.container a img{
     width:280px;
     height: auto;
+}
+.daohang{
+    position: relative;
+    top:10px;
+    left:5%;
+    margin:10px 0 ;
+    width:100%;
+
+}
+.daohang > a {
+    font-weight: 600;
+    color: #515151;
+    font-size: 14px;
 }
