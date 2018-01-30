@@ -3,33 +3,38 @@ body{
     font-family: 微软雅黑;
 }
 .container{
+    position: relative;
     margin:20px auto;
 }
 .box{
     position: relative;
     float: left;
     top:0;
+    transition: 0.3s;
     margin:15px;
     background-color: #FFF;
     padding:4px;
     border:1px #FFF;
     border-radius: 2px;
     box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
-    transition: 0.3s;
 }
 .box:hover{
     top:-10px;
 }
 .container a img{
     width:280px;
-    height: auto;
+    display: block;
+
+
+
 }
+
 .daohang{
     position: relative;
     top:10px;
     left:5%;
     margin:10px 0 ;
-    width:100%;
+    width:400px;
 
 }
 .daohang > a {
