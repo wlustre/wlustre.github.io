@@ -66,13 +66,37 @@ $(document).ready(function(){
         $('.menu').click(function(event){
             event.stopImmediatePropagation();//取消事件冒泡；
             $(".nav2").animate({right:"0"});
+            $(".backcolor").css("display","block")
         });
 
         $(document).bind("click",function(e){ //点击窗口外地方消失
             var target = $(e.target);
             if(target.closest(".nav2").length == 0){
-                $(".nav2").animate({right:"-200px"});
+                $(".nav2").animate({right:"-250px"});
+                $(".backcolor").css("display","none")
             }
         })
     });
+    var deg=0;
+    $(".list").click(function () {      //点击相册下拉菜单
+        deg=deg+180;
+        $(".rotate").css("transform","rotate("+deg+"deg)");  //箭头旋转
+        $(".downlist").slideToggle();
+        if(deg==180){    //判断，度数置零
+            deg=-180;
+        }else{
+            deg=0;
+        }
+
+        var list=$(".downlist ul li");
+        var time=0;
+        list.each(function (index,value) {   //对每个li盒子进行循环，每次延迟加50毫秒，达到不同延迟的动画效果
+            if($(value).css("left")=="-150px"){
+                $(value).delay(time).animate({opacity:"1",left:"0"},"fast")
+            }else {
+                $(value).animate({opacity:"0",left:"-150px"},"fast")
+            }
+            time=time+50;
+        })
+    })
 });

@@ -61,43 +61,100 @@ a{
 .navigation li a:hover{
     color:#FF6F3C;
 }
-/*菜单*/
+/*移动设备菜单*/
+
 .menu{
-    padding:10px 0;
+    padding:14px 0;
     position: absolute;
     float: left;
     right:8%;
     display: none;
 }
-.nav2 h3{
-    text-align: center;
-    padding:10px;
-    color: #FFF;
+.menu img{
+    width:40px;
+}
+.backcolor{         /*导航背景*/
+    position: fixed;
+    width:100%;
+    z-index: 29;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.41);
+    display: none;
 }
 .nav2{
     position: fixed;
     top: 0;
-    right: -200px;
+    right: -250px;
     bottom: 0;
     overflow: hidden;
     z-index: 30;
-    width: 200px;
-    background-color:#000000;
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffff;
     display: none;
 }
+.imglogo{
+    position: relative;
+    margin-top:60px;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #eeeeee;
+    width:55px;
+    height:55px;
+    right: 0;
+    top:0;
+}
+.nav2 h3{
+    position: relative;
+    top:-20px;
+    display: inline-block;
+    text-align: center;
+    padding:10px;
+    color: #333333;
+ }
+.nav2 p{
+    position: absolute;
+    font-size: 12px;
+    top:104px;
+    left:106px;
+    color: #333333;
+}
+.nav2 ul li a img{
+    position: absolute;
+    top:14px;
+    left:20px;
+    width:25px;
+    transition: 0.3s;
+}
+
 .nav2 li{
+    position: relative;
     list-style-type: none;
-    border-bottom: 1px solid #333333;
+    transition: 0.3s ;
+}
+.nav2 li:hover{
+    background-color: #eee;
+
 }
 .nav2 li a{
     display: block;
-    text-align: center;
     text-decoration: none;
+    padding:15px;
     font-size: 14px;
-    color: #fff;
-    padding:10px 0;
-    margin:15px 20px;
+    font-weight: 600;
+    color: #333333;
+    margin-left:50px;
     transition: 0.3s;
+}
+.downlist{
+    display: none;
+}
+.downlist li{
+    position: relative;
+    left:-150px;
+    opacity: 0;
 }
 /*头像*/
 .dropdown{
@@ -304,4 +361,97 @@ a{
 
 .centerbox a:hover{
     opacity: 0.8;
+}
+@media screen and (max-width: 1200px ){
+
+    /*导航*/
+    .menu{
+        display: block;
+    }
+    /*.backcolor{*/
+    /*display: none;*/
+    /*}*/
+    .nav2{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+    }
+    .content-one{
+        width: 90%;
+        margin:20px auto;
+    }
+
+    /*置顶*/
+    .gotop img{
+        width:30px;
+        padding:3px;
+    }
+    .gotop li{
+        width:36px;
+        height: 36px;
+    }
+    .wechar-box img{
+        float: left;
+        width:100px;
+        padding:0;
+    }
+    .wechar-box{
+
+        top:-20px;
+        right:36px;
+    }
+    /*尾部*/
+    .centerbox h4{
+        font-size: 14px;
+    }
+    .centerbox p,.centerbox h4,.centerbox a{
+        font-size: 12px;
+    }
+    .centerbox{
+        width:100%;
+        margin:0 auto;
+        height:150px;
+    }
+    .bottom4{
+        float: left;
+        height:150px;
+        width:20%;
+        margin:0;
+    }
+    /*问题反馈*/
+    .detailed1 img{
+        width:180px;
+    }
+    .detailed1{
+        display: none;
+        position: absolute;
+        z-index: 102;
+        top:-150px;
+        left:-180px;
+        width:270px;
+        height:200px;
+    }
+    .wechar:hover .triangle1{
+        display: none;
+    }
+    .wechar{
+        width:50px;
+        height:50px;
+        position: relative;
+        left:12%;
+    }
+    .gotop{
+        position: fixed;
+        right:5%;
+        bottom:130px;
+        z-index: 101;
+
+    }
+    .bottom4{
+        margin:0;
+    }
 }

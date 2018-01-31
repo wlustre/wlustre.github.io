@@ -19,6 +19,9 @@
             .menu{
                 display: block;
             }
+            /*.backcolor{*/
+                /*display: none;*/
+            /*}*/
             .nav2{
                 display: block;
             }
@@ -200,22 +203,45 @@
 </head>
 <body>
     <div class="header clearfix">
-        <div class="logo">
+        <div class="logo">    <!--logo-->
             <h2>CENET</h2>
         </div>
-        <div class="menu">
+        <div class="menu">           <!--点击菜单呼出nav2-->
             <img src="images/菜单.png">
         </div>
-        <div class="nav2" id="navclick">
-            <h3>创e网络联盟</h3>
-            <ul class="clearfix">
-                <li ><a href="#">首页</a></li>
-                <li><a href="#">文章</a></li>
-                <li><a href="#">活动</a></li>
-                <li><a href="photo.html">相册</a></li>
-            </ul>
+
+        <div class="backcolor">   <!--导航背景-->
         </div>
-        <div class="navigation ">
+            <div class="nav2" id="navclick">  <!--移动设备侧边导航-->
+                <div>
+                    <img  class="imglogo" src="images/头像.jpg">
+                    <h3>创e网络联盟</h3>
+                    <p>CHUANGENET</p>
+                </div>
+
+                <ul class="clearfix">
+                    <li ><a href="index.html"><img src="icon/首页.png">首页</a></li>
+                    <li><a href="#"><img src="icon/文章.png">文章</a></li>
+
+                    <li><a class="list"><img src="icon/相册.png">相册<img class="rotate" style="left: 200px" width="35px" src="icon/箭头.png"></a></li>
+                    <div class="downlist">
+                        <ul>
+                            <li><a href="photo/1th.html"><img src="icon/图像.png">Myshow-1th</a></li>
+                            <li><a href="photo/2th.html"><img src="icon/图像.png">Myshow-2th</a></li>
+                            <li><a href="photo/3th.html"><img src="icon/图像.png">Myshow-3th</a></li>
+                            <li><a href="photo/4th.html"><img src="icon/图像.png">Myshow-4th</a></li>
+                            <li><a href="photo/5th.html"><img src="icon/图像.png">Myshow-5th</a></li>
+                            <li><a href="photo/6th.html"><img src="icon/图像.png">Myshow-6th</a></li>
+                            <li><a href="photo/7th.html"><img src="icon/图像.png">Myshow-7th</a></li>
+                            <li><a href="photo/8th.html"><img src="icon/图像.png">Myshow-8th</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#"><img src="icon/活动.png">活动</a></li>
+                </ul>
+            </div>
+
+
+        <div class="navigation ">        <!--电脑设备导航-->
             <ul class="clearfix">
                 <li ><a href="#">首页</a></li>
                 <li><a href="#">文章</a></li>
@@ -225,8 +251,8 @@
         </div>
         <div class="navigation-2">
             <ul class="clearfix ">
-                <li class="dropdown"><a href="#"><img id="touxiang" class="imgdro" src="images/头像.jpg"></a>
-                    <div class="dropdown-conten">
+                <li class="dropdown"><a href="#"><img id="touxiang" class="imgdro" src="images/头像.jpg"></a>  <!--头像logo-->
+                    <div class="dropdown-conten">               <!--鼠标移到头像弹出社团信息-->
                         <img src="images/创E.png">
                         <p>学校：嘉应学院</p>
                         <p>属性：校级社团</p>
@@ -275,7 +301,7 @@
                 </div></a></li>
             </ul>
         </div><!--
-     --><div class="new-writing">
+     --><div class="new-writing">           <!--三条社团简介-->
         <h2 style="font-size: 17px">我们e家</h2>
             <a href="#"><div class="writingbox">
                     <img src="images/writing-1.jpg">
@@ -290,7 +316,7 @@
                     <div class="xianxi">
                     <h2>八大部门</h2>
                         <ul>
-                            <li><a  onclick="ulrHtml(0)">秘书处&nbsp|&nbsp</a></li>
+                            <li><a  onclick="ulrHtml(0)">秘书处&nbsp|&nbsp</a></li>         <!--点击进行跳转介绍-->
                             <li><a  onclick="ulrHtml(1)">财务部&nbsp|&nbsp</a></li>
                             <li><a  onclick="ulrHtml(2)">宣传部&nbsp|&nbsp</a></li>
                             <li><a  onclick="ulrHtml(3)">联络部</a></li>
@@ -316,7 +342,7 @@
         </div>
     </div>
 
-    <div class="container clearfix">
+    <div class="container clearfix">                        <!--三个软件小卡片-->
         <div class="lefts clearfix">
             <div class="lefts-border clearfix">
                 <div class="lefts-box1">
@@ -341,9 +367,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="mains">
+
+        <div class="mains">       <!--文章推送-->
 
             <div id="hot" class="tabcontent">
                 <div class="contents">
@@ -424,12 +450,11 @@
             <div class="adver">
                 <p>广告出租位</p>
             </div>
-
-
-
         </div>
     </div>
-    <div class="gotop" >
+
+
+    <div class="gotop" >   <!--固定导航-->
         <ul>
             <li class="wechar-down">
                 <div ><img  src="images/微信-2.png"></div>
@@ -445,10 +470,9 @@
                 <a onclick="pageScroll()"><img src="images/返回顶部.png"></a>
             </li>
         </ul>
-
-
     </div>
-    <div class="under">
+
+    <div class="under">        <!--页脚-->
         <div class="centerbox">
             <div class="bottom1">
                 <h4>友情链接</h4>
@@ -485,7 +509,7 @@
         </div>
     </div>
 <script>
-    function ulrHtml(num){
+    function ulrHtml(num){       /*部门信息跳转参数传递*/
         var toUrl = "department.html?"+num;
         window.open(toUrl);
     }
