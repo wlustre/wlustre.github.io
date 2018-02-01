@@ -13,6 +13,7 @@ $(document).ready(function () {
     },function () {
         animatelevel($(this),framehight)
     })
+
 });
 function animateon(value,framehight) {              //悬停动画函数
     var height=72;   //默认增加的高度

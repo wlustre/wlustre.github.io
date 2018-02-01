@@ -4,6 +4,7 @@ $(document).ready(function () {
 
     });
     $(".under").css("display","none")
+
 });
 
 function imgLocation() {
